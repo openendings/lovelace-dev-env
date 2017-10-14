@@ -53,7 +53,11 @@ ARG JUDGE_DIR
 ADD $JUDGE_DIR /usr/local/judge
 ENV PATH="/usr/local/judge:${PATH}"
 
-RUN echo 'export PATH="/usr/local/train/utils:/usr/local/judge:$PATH"' > /etc/profile.d/path-extras.sh
+###############################################################################
+# Make the shell experience friendly
+###############################################################################
+
+COPY path-extras.sh /etc/profile.d/path-extras.sh
 RUN chmod a+x /etc/profile.d/path-extras.sh
 
 COPY entrypoint.sh /
