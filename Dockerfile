@@ -62,3 +62,4 @@ RUN chmod a+x /etc/profile.d/path-extras.sh
 
 COPY entrypoint.sh /
 ENTRYPOINT ["/entrypoint.sh"]
+WORKDIR "/home/lovelace"
