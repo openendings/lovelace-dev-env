@@ -14,7 +14,7 @@ You can get its name with `docker ps`, and bring it down with `docker kill <CONT
 You can run commands as the `lovelace` user with `docker exec -u lovelace -it <IMAGE NAME> <CMD>`.
 Setting "`bash`" as a command gives you a shell.
 
-###
+### FAQ
 
 **Q:** I get the error `docker: No such file or directory`.
 
