@@ -3,7 +3,9 @@
 ## Running the image
 
 ```
-$ docker run -dt <IMAGE NAME>
+$ docker run -dt \
+  --mount type=bind,src=<LOVELACE SRC DIRECTORY>,dst=/home/lovelace/lovelace-src \
+  <IMAGE NAME>
 ```
 
 This will initialise a Lovelace-friendly Docker container in the background.
